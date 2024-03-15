@@ -318,7 +318,7 @@ text-align: center;
     font-weight: 600;
     text-align: center;
   }
-  .banner__text.dutdot{
+  .banner__text ul.dutdot{
     display: flex;
   flex-direction: column;
   text-align: center;
@@ -337,6 +337,85 @@ text-align: center;
     justify-content: center;
   }
 }
+/* offer */
+.offer{
+  background:grey ;
+  background:var(--light);
+  height:70vh ;
+}
+.offer__text a.btn{
+  font-size:1.5rem;
+  font-weight:770;
+  width:155px;
+}
+.offer__text{
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.offer__text h2{
+  font-size: 5rem;
+  font-weight: 600;
+  color: #134A8C;
+}
+.offer__text p{
+  font-weight: 600;
+  justify-content: flex-end;
+  text-align: left;
+  width: 100%;
+}
+.offer__text a.hover{
+  transform: translateX(1rem);
+  transition: .5s ease;
+}
+.offer__wrapper{
+  display: flex;
+  position: absolute;
+  transform:translateY(15rem);
+background-position-x: center ;
+}
+.offer ul.social li a{
+  color:var(--light);
+  font-size: 3rem;
+}
+.offer__price h3{
+  font-size: 5rem;
+  color:orange;
+}
+@media screen and (max-width:500px){
+ .offer h3{
+  font-size: 4rem;
+text-align: center;
+ }
+ .offer__text p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.offer__text ul.dutdot{
+  display: flex;
+flex-direction: column;
+text-align: center;
+}
+.offer__text ul.dutdot li a{
+  width: 80%;
+}
+.offer__text ul.social{
+  justify-content: center;
+}
+
+
+ .offer__faq{
+  width: 100%;
+  border-top-left-radius:0rem ;
+}
+.offer__faq a{
+  justify-content: center;
+align-items: flex-end;
+}
+  
+}
 
 /* REPEATABLE PATTERNS */
 :root{
@@ -350,7 +429,7 @@ text-align: center;
   border-radius: 5rem;
   border:1px solid transparent;
   transition: .5s ease;
-text-align:center;
+  text-align:center;
 }
 .btn:hover{
   scale:1.1;
